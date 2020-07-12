@@ -17,6 +17,23 @@
 ##### On the options, choose the Micropython (esp8266)  and then choose the port name (number ) to which your nodeMCU dev board is connected. In this case we chose COM11.
 ![Setting up MicroPython on Thonny IDE](https://gblobscdn.gitbook.com/assets%2F-Ly3OADOGtKzS60vUfrw%2F-MBFAS71IOLtyxOUusXS%2F-MBFB2iyumxsX3I0Sxbw%2FmicroPython(3).PNG?alt=media&token=d0aa51c2-7658-46cc-a97e-f20333b46b91)
 
+##### Thonny should now be connected to your NodeMCU board and you should the following message on the shell window.
+
+![](https://gblobscdn.gitbook.com/assets%2F-Ly3OADOGtKzS60vUfrw%2F-MBFEoVCaZNql75DVCKr%2F-MBFFIp1DLrb15hwL9jk%2FmicroPython(5).PNG?alt=media&token=d57ba602-4fa7-4a35-8890-c75e2fe14611)
+
+##### To test the configuration, type the command help() and see what you get in response. when everything is in order you should see the following.
+
+![](https://gblobscdn.gitbook.com/assets%2F-Ly3OADOGtKzS60vUfrw%2F-MBFFz1IYEUPBtlLGUmZ%2F-MBFGTdcHK-0aAFXcv6A%2FmicroPython(6).PNG?alt=media&token=26e6d098-1a95-4150-a294-cc84697b2b0f)
+
+#### Testing MicroPython
+
+##### Write the following commands on the Thonny IDE and execute them to light up the on-board LED 
+
+```python
+from machine import Pin
+Pin(2, Pin.OUT).value(0)
+```
+
 ##### The list of my work is included below:
 * [Build a Modern Personal Website From Scratch - Part 1](https://medium.com/@tiisetsomphuthi/build-a-modern-personal-website-from-scratch-part-1-24323085624)
 * [Build a Modern Personal Website From Scratch - Part 2](https://medium.com/@tiisetsomphuthi/build-a-modern-personal-website-from-scratch-part-2-b968870fa1b7)
