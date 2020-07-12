@@ -15,7 +15,7 @@
 ##### To start programming on your NodeMCU (esp8266) using Thonny IDE, you will need to open the Thonny IDE and then click on **Tools** > **Options** and select the **Interpreter** tab.
 
 ##### On the options, choose the Micropython (esp8266)  and then choose the port name (number ) to which your nodeMCU dev board is connected. In this case we chose COM11.
-
+![Setting up MicroPython on Thonny IDE]("https://app.gitbook.com/@reacoda/s/reacoda/~/drafts/-MC3rgZfUnwmzlxV1Uig/control-leds-using-nodemcu-and-micropython-part-1/using-micropython-on-thonny-ide")
 
 ##### The list of my work is included below:
 * [Build a Modern Personal Website From Scratch - Part 1](https://medium.com/@tiisetsomphuthi/build-a-modern-personal-website-from-scratch-part-1-24323085624)
