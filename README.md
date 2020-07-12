@@ -33,6 +33,29 @@
 from machine import Pin
 Pin(2, Pin.OUT).value(0)
 ```
+##### When using the esp8266 board, the logic works in the opposite. That is to say, the value () argument will be 0 instead of 1 which is usually reserved for "ON".
+
+#### Blinking the built-in LED
+
+##### In this section, we will be programming the nodeMCU board to blink it's built-in LED. The following script will be run on the Thonny IDE's editor.
+
+##### N.B. when uploading the code as ledblink.py it will be saved as main.py on the board regardless of what you saved it as on your computer. 
+
+##### Once you are done uploading the code press the Reset (RST) button on the board.
+
+#### Explanation of the code:
+
+```python
+from machine import Pin
+```
+
+##### Here we are importing a module called `machine` and from it we are accessing the `Pin` class.
+
+```python
+from time import sleep
+```
+
+##### From the module `time` we get the class `sleep`.
 
 ##### The list of my work is included below:
 * [Build a Modern Personal Website From Scratch - Part 1](https://medium.com/@tiisetsomphuthi/build-a-modern-personal-website-from-scratch-part-1-24323085624)
