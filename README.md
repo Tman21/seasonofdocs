@@ -1,5 +1,5 @@
 # Season of Docs Application 
-![CV/Portfolio of Tiisetso Mphuthi](http://codewithtiisetso.reacoda.co.za)
+[CV/Portfolio of Tiisetso Mphuthi](http://codewithtiisetso.reacoda.co.za)
 
 
 ### This is my application for season of docs 
