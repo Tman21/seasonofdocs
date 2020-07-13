@@ -1,7 +1,7 @@
 # Season of Docs Application 
 ### This is my application for season of docs 
-##### Below is the sample of a tutorial on using the MicroPython firmware on a NodeMCU dev kit (ESP8266)
-### Use MicroPython on Thonny IDE to Blink an LED.
+##### Below is the sample of two tutorials on using the MicroPython firmware on a NodeMCU dev kit (ESP8266)
+## 1. Use MicroPython on Thonny IDE to Blink an LED.
 ##### In this tutorial, we will be setting and using microPython firmware on the Thonny IDE.
 
 #### Components Needed 
@@ -65,8 +65,9 @@ led = Pin(2, Pin.OUT)
 
 ##### Finally we will be using a `while` loop to turn the LED on for half a minute and then turn it off for another half a minute.
 
+### END
 
-### Using Pulse Width Modulation with MicroPython 
+## 2. Using Pulse Width Modulation with MicroPython 
 
 ##### In this tutorial, we will be using the PWM module from the microPython firmware to control an external LED. This will allow us to control the brightness of the LED.
 
@@ -158,7 +159,12 @@ for duty_cycle in range(0, 1024):
 range(start, stop, step)
 ```
 
-##### *start*: a number which specifies at which position to start.
+##### **start**: a number which specifies at which position to start.
+##### **stop**: a number which specifies at which position we want to stop, excluding that value. 
+##### **step**: refers to the number of times it iterates
+
+### END
+
 
 
 ##### The list of my work is included below:
