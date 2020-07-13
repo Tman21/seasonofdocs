@@ -1,4 +1,7 @@
 # Season of Docs Application 
+![CV/Portfolio of Tiisetso Mphuthi](http://codewithtiisetso.reacoda.co.za)
+
+
 ### This is my application for season of docs 
 ##### Below is the sample of two tutorials on using the MicroPython firmware on a NodeMCU dev kit (ESP8266)
 ## 1. Use MicroPython on Thonny IDE to Blink an LED.
