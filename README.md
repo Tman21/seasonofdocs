@@ -55,7 +55,39 @@ from machine import Pin
 from time import sleep
 ```
 
-##### From the module `time` we get the class `sleep`.
+##### From the module `time` we get the class `sleep`. This will be used as a timer.
+
+```python
+led = Pin(2, Pin.OUT)
+```
+
+##### Here we create a Pin object called led. We are using the pin 2 that is where the built-in LED is connected. The pin is also declared as an output device. 
+
+##### Finally we will be using a `while` loop to turn the LED on for half a minute and then turn it off for another half a minute.
+
+
+### Using Pulse Width Modulation with MicroPython 
+
+##### In this tutorial, we will be using the PWM module from the microPython firmware to control an external LED. This will allow us to control the brightness of the LED.
+
+#### Things that will be Needed:
+* NodeMCU dev kit board 
+* 220 ohm resistor
+* Breadboard
+* 5mm LED
+* Jumper wires 
+
+#### Setting up the Circuit:
+
+##### The first thing you will need to do is setup the circuit as is shown in the diagram below:
+
+![](https://gblobscdn.gitbook.com/assets%2F-Ly3OADOGtKzS60vUfrw%2F-MBK_z4MqceqfzedtbvL%2F-MBKb6sbb3ljclRK8haU%2FmicroPython(8).PNG?alt=media&token=4d7238fe-26ab-4cee-8743-5c4b3290bdce)
+
+![](https://gblobscdn.gitbook.com/assets%2F-Ly3OADOGtKzS60vUfrw%2F-MBKdI6dqzQu3sZJmDFM%2F-MBKihGoepfdRtiN1YfL%2FNodeMCU_V2_v2.png?alt=media&token=f4da1171-2b03-42ff-94a0-4ab04c9ec1c3)
+
+1. Firstly, on the breadboard insert the LED as shown above.
+2. Using a jumper wire connect one end to the long leg of the LED, then connect the other end to the pin D2 on the nodeMCU board.
+3. Connect the one end of the 220 ohm resistor to the short leg of the LED as shown above. The other end of the resistor is connected to the GND pin on the nodeMCU board.
 
 ##### The list of my work is included below:
 * [Build a Modern Personal Website From Scratch - Part 1](https://medium.com/@tiisetsomphuthi/build-a-modern-personal-website-from-scratch-part-1-24323085624)
