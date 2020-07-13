@@ -89,6 +89,78 @@ led = Pin(2, Pin.OUT)
 2. Using a jumper wire connect one end to the long leg of the LED, then connect the other end to the pin D2 on the nodeMCU board.
 3. Connect the one end of the 220 ohm resistor to the short leg of the LED as shown above. The other end of the resistor is connected to the GND pin on the nodeMCU board.
 
+#### The Code
+
+##### This is the code that you will write on the editor of Thonny IDE and then upload it to the nodeMCU dev kit board.
+
+```python
+from machine import Pin,PWM
+from time import sleep
+
+frequency = 5000
+led = PWM(Pin(5), frequency)
+
+while True:
+  for duty_cycle in range(0, 1024):
+    led.duty(duty_cycle)
+    sleep(0.005)
+```
+#### Explaining the Code:
+
+```python
+from machine import Pin,PWM
+```
+
+##### In this line of code, we get the `Pin` and `PWM` class from the built-in module called `machine`. This is to create the PWM pin.
+
+```python
+from time import sleep 
+```
+
+##### Here we are getting the `sleep` class from the `time` module. This will be used as a timer.
+
+```python
+led = PWM(Pin(5), frequency)
+```
+
+##### In this section of the code, we are creating a PWM object that uses the pin that is connected to, the signal frequency, and the duty cycle as its parameters.
+
+##### The *duty* *cycle* can be a value between 0 and 1023. 1023 is the same as 100% duty cycle, which is translated to full brightness (of led). 0 is the same as 0% duty cycle which is unlit led.
+
+##### The frequency can be a value between 0 and 78125. A frequency of 5000 Hz can be used to control the brightness. 
+
+```python
+while True:
+  for duty_cycle in range(0, 1024):
+    led.duty(duty_cycle)
+    sleep(0.005)
+```
+
+##### Here we use a while loop to set the duty cycle so that we don't need to pass the duty cycle parameter. if we don't set the duty cycle when instantiating the PWM object, it will be 0 by default.
+
+```python
+led.duty(duty_cycle)
+```
+
+##### To set the duty cycle use the duty() method on the PWM object.
+
+```python
+for duty_cycle in range(0, 1024):
+    led.duty(duty_cycle)
+    sleep(0.005)
+```
+
+##### Inside the while loop, we use a for loop that increases the duty cycle by 1 in each loop with an interval of 5 ms between each change.
+
+##### The range() function used above has the following syntax:
+
+```python
+range(start, stop, step)
+```
+
+##### *start*: a number which specifies at which position to start.
+
+
 ##### The list of my work is included below:
 * [Build a Modern Personal Website From Scratch - Part 1](https://medium.com/@tiisetsomphuthi/build-a-modern-personal-website-from-scratch-part-1-24323085624)
 * [Build a Modern Personal Website From Scratch - Part 2](https://medium.com/@tiisetsomphuthi/build-a-modern-personal-website-from-scratch-part-2-b968870fa1b7)
